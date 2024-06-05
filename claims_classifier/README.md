@@ -26,7 +26,7 @@ import pickle
 with open('./data/claims_clf.pkl', 'rb') as archivo:
   clf  = pickle.load(archivo)
 ```
-Al cargar el clasificador desde el archivo, el mismo queda guardado en la variable `clf` para utilizarlo, simplemente llamar al método clasificar.
+Al cargar el clasificador desde el archivo, el mismo queda guardado en la variable `clf`, para utilizarlo, simplemente llamar al método clasificar.
 
 ```
 reclamos = [
@@ -35,7 +35,7 @@ reclamos = [
 ]
 clf.clasificar(reclamos)
 ```
-Tener en cuenta que clasificar recibe como parámetro una lista de reclamos (lista de strings).
+Tener en cuenta que el método `clasificar()` recibe como parámetro una lista de reclamos (lista de strings).
 Las etiquetas que devuelve este clasificador son: `soporte informático`, `secretaría técnica` y `maestranza`.
 
-Ver el ejemplo `eval_claims_clf.py` de la carpeta `apps` para probar el uso del clasificador.
+Ver el ejemplo `eval_claims_clf.py` en la carpeta `apps` para probar el uso del clasificador.
