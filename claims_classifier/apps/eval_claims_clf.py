@@ -1,5 +1,5 @@
 import pickle
-
+from uralicNLP import uralicApi
 # Abrir el archivo con el clasificador y guardarlo en la variable clf
 with open('./data/claims_clf.pkl', 'rb') as archivo:
   clf  = pickle.load(archivo)
